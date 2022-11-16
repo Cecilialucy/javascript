@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="escopo.js"></script>
+    <script>
+        const btn = document.querySelector("button");
+        const _this = this
+        btn.addEventListener("click", function () {
+            console.log("declaration")
+            console.log(this)
+            console.log(_this)
+        })
+
+        btn.addEventListener("click", () => {
+            console.log("arrow")
+            console.log(this)
+            console.log(_this)
+        })
+    </script>
+</body>
+
+</html>
