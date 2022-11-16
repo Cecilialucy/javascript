@@ -1,0 +1,48 @@
+{
+    "version": 3,
+    "sources": [
+        "webpack://tooling/./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js",
+        "webpack://tooling/./node_modules/@babel/runtime/helpers/esm/classCallCheck.js",
+        "webpack://tooling/./node_modules/@babel/runtime/helpers/esm/createClass.js",
+        "webpack://tooling/./node_modules/@babel/runtime/helpers/esm/typeof.js",
+        "webpack://tooling/./src/teste1.js",
+        "webpack://tooling/webpack/bootstrap",
+        "webpack://tooling/webpack/runtime/define property getters",
+        "webpack://tooling/webpack/runtime/hasOwnProperty shorthand",
+        "webpack://tooling/webpack/runtime/make namespace object",
+        "webpack://tooling/webpack/startup"
+    ],
+    "names": [
+        "teste",
+        "arrowFn",
+        "n",
+        "console",
+        "log",
+        "Teste",
+        "getAdress",
+        "cep",
+        "url",
+        "fetch",
+        "resposta",
+        "ok",
+        "Error",
+        "json",
+        "then",
+        "data"
+    ],
+    "mappings": ";;;;;;;;;;;;;;AAAA;AACA;AACA;AACA;AACA,GAAG;AACH;AACA;AACA;AACA;AACA;AACA,GAAG;AACH;AACA;AACA;AACe;AACf;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA,KAAK;AACL;AACA,C;;;;;;;;;;;;;;AC7Be;AACf;AACA;AACA;AACA,C;;;;;;;;;;;;;;ACJA;AACA,iBAAiB,kBAAkB;AACnC;AACA;AACA;AACA;AACA;AACA;AACA;AACe;AACf;AACA;AACA;AACA;AACA,GAAG;AACH;AACA,C;;;;;;;;;;;;;;AChBe;AACf;;AAEA;AACA;AACA,GAAG;AACH;AACA,GAAG;AACH,C;;;;;;;;;;;;;;;;;;;+CCPA;AADA,IAAMA,KAAK,GAAG,SAAS;AACvB,IAAMC,OAAO,GAAG,SAAVA,OAAO,CAAGC,CAAC;EAAA,OAAIA,CAAC,GAAGA,CAAC;AAAA;AAC1BC,OAAO,CAACC,GAAG,CAACH,OAAO,CAAC,CAAC,CAAC,CAAC;AAAA,IAEjBI,KAAK,4FACP,eAAYH,CAAC,EAAC;EAAA;EACV,IAAI,CAACA,CAAC,GAAGA,CAAC;AACd,CAAC;AAGL,IAAMI,SAAS;EAAA,qIAAG,iBAAOC,GAAG;IAAA;IAAA;MAAA;QAAA;UAAA;YACpBC,GAAG,sCAA+BD,GAAG;YAAA;YAAA;YAAA,OAEdE,KAAK,CAACD,GAAG,CAAC;UAAA;YAA3BE,QAAQ;YAAA,IACVA,QAAQ,CAACC,EAAE;cAAA;cAAA;YAAA;YAAA,MAAQC,KAAK,CAAC,qBAAqB,CAAC;UAAA;YAAA;YAAA,OAChCF,QAAQ,CAACG,IAAI,EAAE;UAAA;YAA5BA,IAAI;YAAA,iCACHA,IAAI;UAAA;YAAA;YAAA;YAAA;UAAA;UAAA;YAAA;QAAA;MAAA;IAAA;EAAA,CAIlB;EAAA,gBAVKP,SAAS;IAAA;EAAA;AAAA,GAUd;AACDH,OAAO,CAACC,GAAG,CAAC,YAAY,CAAC;AACxBE,SAAS,CAAC,WAAW,CAAC,CAACQ,IAAI,CAAC,UAAAC,IAAI;EAAA,OAAIZ,OAAO,CAACC,GAAG,CAACW,IAAI,CAAC;AAAA,EAAC,C;;;;;;UCtBvD;UACA;;UAEA;UACA;UACA;UACA;UACA;UACA;UACA;UACA;UACA;UACA;UACA;UACA;;UAEA;UACA;;UAEA;UACA;UACA;;;;;WCrBA;WACA;WACA;WACA;WACA,wCAAwC,yCAAyC;WACjF;WACA;WACA,E;;;;;WCPA,6CAA6C,wDAAwD,E;;;;;WCArG;WACA;WACA;WACA,sDAAsD,kBAAkB;WACxE;WACA,+CAA+C,cAAc;WAC7D,E;;;;UCNA;UACA;UACA;UACA",
+    "file": "teste1.js",
+    "sourcesContent": [
+        "function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {\n  try {\n    var info = gen[key](arg);\n    var value = info.value;\n  } catch (error) {\n    reject(error);\n    return;\n  }\n  if (info.done) {\n    resolve(value);\n  } else {\n    Promise.resolve(value).then(_next, _throw);\n  }\n}\nexport default function _asyncToGenerator(fn) {\n  return function () {\n    var self = this,\n      args = arguments;\n    return new Promise(function (resolve, reject) {\n      var gen = fn.apply(self, args);\n      function _next(value) {\n        asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n      }\n      function _throw(err) {\n        asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n      }\n      _next(undefined);\n    });\n  };\n}",
+        "export default function _classCallCheck(instance, Constructor) {\n  if (!(instance instanceof Constructor)) {\n    throw new TypeError(\"Cannot call a class as a function\");\n  }\n}",
+        "function _defineProperties(target, props) {\n  for (var i = 0; i < props.length; i++) {\n    var descriptor = props[i];\n    descriptor.enumerable = descriptor.enumerable || false;\n    descriptor.configurable = true;\n    if (\"value\" in descriptor) descriptor.writable = true;\n    Object.defineProperty(target, descriptor.key, descriptor);\n  }\n}\nexport default function _createClass(Constructor, protoProps, staticProps) {\n  if (protoProps) _defineProperties(Constructor.prototype, protoProps);\n  if (staticProps) _defineProperties(Constructor, staticProps);\n  Object.defineProperty(Constructor, \"prototype\", {\n    writable: false\n  });\n  return Constructor;\n}",
+        "export default function _typeof(obj) {\n  \"@babel/helpers - typeof\";\n\n  return _typeof = \"function\" == typeof Symbol && \"symbol\" == typeof Symbol.iterator ? function (obj) {\n    return typeof obj;\n  } : function (obj) {\n    return obj && \"function\" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj;\n  }, _typeof(obj);\n}",
+        "const teste = \"teste 8\"\r\nconst arrowFn = n => n * n\r\nconsole.log(arrowFn(2))\r\n\r\nclass Teste {\r\n    constructor(n){\r\n        this.n = n\r\n    }\r\n}\r\n\r\nconst getAdress = async (cep) => {\r\n    let url = `https://viacep.com.br/ws/${cep}/json`\r\n    try {\r\n        const resposta = await fetch(url)\r\n        if(!resposta.ok) throw Error(\"Invalid postal code\")\r\n        const json = await resposta.json()\r\n        return json\r\n    } catch(e){\r\n        throw e\r\n    }\r\n}\r\nconsole.log(\"----------\")\r\n getAdress(\"03136-050\").then(data => console.log(data))\r\n",
+        "// The module cache\nvar __webpack_module_cache__ = {};\n\n// The require function\nfunction __webpack_require__(moduleId) {\n\t// Check if module is in cache\n\tif(__webpack_module_cache__[moduleId]) {\n\t\treturn __webpack_module_cache__[moduleId].exports;\n\t}\n\t// Create a new module (and put it into the cache)\n\tvar module = __webpack_module_cache__[moduleId] = {\n\t\t// no module.id needed\n\t\t// no module.loaded needed\n\t\texports: {}\n\t};\n\n\t// Execute the module function\n\t__webpack_modules__[moduleId](module, module.exports, __webpack_require__);\n\n\t// Return the exports of the module\n\treturn module.exports;\n}\n\n",
+        "// define getter functions for harmony exports\n__webpack_require__.d = function(exports, definition) {\n\tfor(var key in definition) {\n\t\tif(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {\n\t\t\tObject.defineProperty(exports, key, { enumerable: true, get: definition[key] });\n\t\t}\n\t}\n};",
+        "__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }",
+        "// define __esModule on exports\n__webpack_require__.r = function(exports) {\n\tif(typeof Symbol !== 'undefined' && Symbol.toStringTag) {\n\t\tObject.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });\n\t}\n\tObject.defineProperty(exports, '__esModule', { value: true });\n};",
+        "// startup\n// Load entry module\n__webpack_require__(\"./src/teste1.js\");\n// This entry module used 'exports' so it can't be inlined\n"
+    ],
+    "sourceRoot": ""
+}
