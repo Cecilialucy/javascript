@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- innerHeight -->
+    <!-- innerWidth  -->
+    <!-- outerHeigth -->
+    <!-- outerWidth -->
+    <!-- screenX -->
+    <!-- screenY -->
+    <h1>Teste BOM - Curso JavaScript</h1>
+
+    <a href="history.html">Vai para History.html</a>
+    <br>
+
+    <button>Abre com método open</button>
+    <hr>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit repellat delectus laborum modi, velit ut sapiente
+        natus. Sint magni, ea vero, explicabo consequuntur iste perferendis beatae, voluptatum voluptates possimus
+        cupiditate?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit repellat delectus laborum modi, velit ut sapiente
+        natus. Sint magni, ea vero, explicabo consequuntur iste perferendis beatae, voluptatum voluptates possimus
+        cupiditate?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit repellat delectus laborum modi, velit ut sapiente
+        natus. Sint magni, ea vero, explicabo consequuntur iste perferendis beatae, voluptatum voluptates possimus
+        cupiditate?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit repellat delectus laborum modi, velit ut sapiente
+        natus. Sint magni, ea vero, explicabo consequuntur iste perferendis beatae, voluptatum voluptates possimus
+        cupiditate?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit repellat delectus laborum modi, velit ut sapiente
+        natus. Sint magni, ea vero, explicabo consequuntur iste perferendis beatae, voluptatum voluptates possimus
+        cupiditate?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit repellat delectus laborum modi, velit ut sapiente
+        natus. Sint magni, ea vero, explicabo consequuntur iste perferendis beatae, voluptatum voluptates possimus
+        cupiditate?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit repellat delectus laborum modi, velit ut sapiente
+        natus. Sint magni, ea vero, explicabo consequuntur iste perferendis beatae, voluptatum voluptates possimus
+        cupiditate?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit repellat delectus laborum modi, velit ut sapiente
+        natus. Sint magni, ea vero, explicabo consequuntur iste perferendis beatae, voluptatum voluptates possimus
+        cupiditate?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit repellat delectus laborum modi, velit ut sapiente
+        natus. Sint magni, ea vero, explicabo consequuntur iste perferendis beatae, voluptatum voluptates possimus
+        cupiditate?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit repellat delectus laborum modi, velit ut sapiente
+        natus. Sint magni, ea vero, explicabo consequuntur iste perferendis beatae, voluptatum voluptates possimus
+        cupiditate?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit repellat delectus laborum modi, velit ut sapiente
+        natus. Sint magni, ea vero, explicabo consequuntur iste perferendis beatae, voluptatum voluptates possimus
+        cupiditate?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit repellat delectus laborum modi, velit ut sapiente
+        natus. Sint magni, ea vero, explicabo consequuntur iste perferendis beatae, voluptatum voluptates possimus
+        cupiditate?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit repellat delectus laborum modi, velit ut sapiente
+        natus. Sint magni, ea vero, explicabo consequuntur iste perferendis beatae, voluptatum voluptates possimus
+        cupiditate?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit repellat delectus laborum modi, velit ut sapiente
+        natus. Sint magni, ea vero, explicabo consequuntur iste perferendis beatae, voluptatum voluptates possimus
+        cupiditate?</p>
+
+    <script>
+
+        let teste = "variável de introdução.html";
+
+        function teste2() {
+            console.log("teste 2 chamado")
+        }
+        console.log(opener);
+
+        document.querySelector("button").addEventListener("click", function () {
+            window.open("history.html", "width=600,heigth=300")
+        })
+
+        // scrollTo e scrollBy
+        console.log(scrollTo(0, 50));
+        console.log(scrollBy(0, 50));
+        console.log(scrollBy(0, -50));
+        console.log(pageXOffset);
+        console.log(pageYOffset);
+
+        // evento de load
+        window.addEventListener("load", function () {
+            console.log("load")
+        })
+
+        window.addEventListener("DOMContentLoaded", function () {
+            console.log("DOMContentLoaded");
+        })
+
+        // resize
+        window.addEventListener("resize", function () {
+            console.log("resize", innerWidth, innerHeight)
+        })
+
+        // scroll
+        window.addEventListener("scroll", function () {
+            console.log("scroll", pageYOffset)
+        })
+
+        // unload e beforeunload
+        window.addEventListener("unload", function () {
+            console.log("unload")
+        })
+
+        window.addEventListener("beforeunload", function () {
+            console.log("beforeunload")
+        })
+
+
+    </script>
+</body>
+
+</html>
