@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title1">Curso de Javascript</h1>
+    <main class="cmain" id="idmain">
+        <h2>Subtítulo</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et delectus ducimus maiores temporibus totam quae
+            porro odit similique esse reiciendis itaque excepturi, ab deleniti, eius veritatis nihil. Sint, mollitia
+            voluptatibus.</p>
+    </main>
+
+    <form action="#">
+        <input type="text" id="txtNome" placeholder="nome"><br><br>
+        <input type="text" id="txtEmail" placeholder="email"><br><br>
+        <input type="checkbox" id="contrato" onclick="enableOrDisableButton()">
+        <label for="contrato">Li e aceito o seguinte contrato:</label><br><br>
+        <textarea name="" id="" cols="30" rows="10" readonly>Este contrato nos dá direito a</textarea>
+        <input type="submit" value="cadastrar">
+    </form>
+
+    <script>
+        const btn = document.querySelector("form input[type='submit']")
+        btn.disabled = true
+
+        function enableOrDisableButton() {
+            const contrato = document.querySelector("#contrato")
+            let checked = contrato.checked
+
+            // if (checked){
+            //     btn.disabled = false
+
+            // } else {
+            //     btn.disabled = true
+
+            // }         
+
+            // Ou pode simplificar o código
+            btn.disabled = !checked
+
+
+
+        }
+
+    </script>
+</body>
+
+</html>

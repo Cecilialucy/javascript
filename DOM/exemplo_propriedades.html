@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Javascript</title>
+</head>
+
+<body>
+    <h1 id="title1">Curso de Javascript</h1>
+    <main class="cmain" id="idmain">
+        <h2>Subtítulo</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et delectus ducimus maiores temporibus totam quae
+            porro odit similique esse reiciendis itaque excepturi, ab deleniti, eius veritatis nihil. Sint, mollitia
+            voluptatibus.</p>
+    </main>
+
+    <form action="#">
+        <input type="text" id="txtNome" placeholder="nome"><br><br>
+        <input type="text" id="txtEmail" placeholder="email" maxlength="10" class="input inputEmail"><br><br>
+        <input type="checkbox" id="contrato">
+        <label for="contrato">Li e aceito.</label><br><br>
+        <textarea name="" id="" cols="30" rows="10" readonly>Este contrato ...</textarea>
+    </form>
+
+    <script>
+        const txtNome = document.querySelector("#txtNome")
+        const txtEmail = document.querySelector("#txtEmail")
+        const labelContrato = document.querySelector("label[for='contrato']")
+        txtNome.value = "Pedro"
+        txt.disabled = true
+        console.log(txtNome.value)
+        console.log(labelContrato.htmlFor)
+        console.log(txtEmail.maxLength)
+        console.log(txtEmail.className)
+
+
+        txtEmail.readOnly = true
+
+    </script>
+</body>
+
+</html>
