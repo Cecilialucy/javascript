@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Teste Dom</h1>
+
+    <div class="container">
+        <p>Teste 1</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, odio eum. Nam ex at praesentium dolore
+            quia dolor, voluptatibus ipsam corrupti. Cupiditate ipsum fugiat magni dignissimos saepe, vel odio commodi
+            <a href="#">link</a>.
+        </p>
+        <p>Teste 2</p>
+
+        <h2>Lista</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2
+                <ul>
+                    <li>Item 2.a</li>
+                    <li>Item 2.b</li>
+                    <li>Item 2.c</li>
+                    <li></li>
+                </ul>
+            </li>
+            <li>Item <a href="#">link</a></li>
+        </ul>
+    </div>
+    <script>
+        console.log(document.body);
+        console.log(document.body.parentElement);
+        console.log(document.body.parentNode);
+        const html = document.body.parentElement;
+
+        console.log(document.body.parentElement === document.body.parentNode);
+
+        console.log(html.parentElement);
+        console.log(html.parentNode);
+
+        const h2 = document.querySelector("h2");
+        const h2nextSibling = h2.nextElementSibling;
+        h2nextSibling.style.background = "darksalmon";
+
+        console.log(h2.previousElementSibling);
+
+
+        const link = document.querySelector("a");
+        const list = document.querySelector("ul ul");
+
+        console.log(link);
+
+        console.log(list.childNodes);
+        console.log(list.children);
+
+        console.log(link.parentElement.childNodes);
+        console.log(link.parentElement.children);
+
+        console.log(link.parentElement.firstChild);
+        console.log(link.parentElement.firstElementChild);
+
+        console.log(link.parentElement.lastChild);
+        console.log(link.parentElement.lastElementChild);
+
+        console.log(list.lastElementChild.hasChildNodes());
+
+    </script>
+</body>
+
+</html>
