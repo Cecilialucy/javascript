@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+
+        let str = "Hoje é 14/12/2021 e amanhã é 15/12/2021. Meu aniversário é 16/12";
+
+
+        const regex = /(\d{1,2})\//g
+
+        // console.log(regex.exec(str));
+        // console.log(regex.exec(str));
+        // console.log(regex.exec(str));
+
+        let arr = regex.exec(str);
+
+        while (arr) {
+            console.log(`Encontrei ${arr[0]} na posição ${arr.index}. Próxima busca começa em ${regex.lastIndex}`)
+            arr = regex.exec(str)
+        }
+        console.log("Terminou o loop")
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
